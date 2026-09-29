@@ -1,2 +1,0 @@
-<h1>Texto grande</h1>
-<h3>Texto pequeño</h3>
