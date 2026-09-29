@@ -1,0 +1,23 @@
+<paises>
+  <pais><nombre>España</nombre>
+    <datos>
+      <capital>Madrid</capital>
+      <continente>Europa</continente>
+      <idioma>Español</idioma>
+    </datos>
+  </pais>
+  <pais><nombre>Portugal</nombre>
+    <datos>
+      <capital>Lisboa</capital>
+      <continente>Europa</continente>
+      <idioma>Portugués</idioma>
+    </datos>
+  </pais>
+  <pais><nombre>Argentina</nombre>
+    <datos>
+      <capital>Buenos Aires</capital>
+      <continente>América</continente>
+      <idioma>Español</idioma>
+    </datos>
+  </pais>
+</paises>
