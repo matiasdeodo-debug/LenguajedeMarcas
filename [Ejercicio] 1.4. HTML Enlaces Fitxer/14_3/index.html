@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía básica de HTML</title>
+</head>
+<body>
+  <h1 id="inicio">Guía básica de HTML</h1>
+
+  <h2>Índice</h2>
+  <ul>
+    <li><a href="#que-es">¿Qué es HTML?</a></li>
+    <li><a href="#etiquetas">Etiquetas básicas</a></li>
+    <li><a href="#imagenes">Imágenes</a></li>
+    <li><a href="#enlaces">Enlaces</a></li>
+  </ul>
+
+  <h2 id="que-es">¿Qué es HTML?</h2>
+  <p>HTML significa "lenguaje de marcas de hipertexto". No es un lenguaje de programación, sino un lenguaje que sirve para describir la estructura de una página web: qué parte es un título, cuál es un párrafo, cuál es una imagen, etc.</p>
+  <p>Los archivos HTML se escriben en un editor de texto como VS Code y se guardan con la extensión .html. Después, el navegador los lee e interpreta para mostrarnos la página ya terminada.</p>
+  <a href="#inicio">↑ Volver al índice</a>
+
+  <h2 id="etiquetas">Etiquetas básicas</h2>
+  <p>El HTML funciona con etiquetas, que normalmente se abren y se cierran, por ejemplo &lt;p&gt; y &lt;/p&gt; para un párrafo. Lo que queda entre las dos etiquetas es el contenido que se muestra en la página.</p>
+  <p>Algunas de las más usadas son &lt;h1&gt; a &lt;h6&gt; para los títulos, &lt;p&gt; para los párrafos y &lt;ul&gt; con &lt;li&gt; para hacer listas. Con estas pocas ya se puede montar una página sencilla.</p>
+  <a href="#inicio">↑ Volver al índice</a>
+
+  <h2 id="imagenes">Imágenes</h2>
+  <p>Para mostrar una imagen se usa la etiqueta &lt;img&gt;, que no necesita cierre. El atributo src indica dónde está la imagen y el atributo alt guarda un texto que la describe por si no carga.</p>
+  <p>Es importante guardar las imágenes del proyecto en una carpeta (por ejemplo img) y usar rutas relativas, para que la página siga funcionando aunque la copiemos a otro ordenador.</p>
+  <a href="#inicio">↑ Volver al índice</a>
+
+  <h2 id="enlaces">Enlaces</h2>
+  <p>Los enlaces se crean con la etiqueta &lt;a&gt; y el atributo href, que dice a dónde lleva. El texto que ponemos dentro del enlace tiene que explicar a dónde va, y no ser algo vacío como "pincha aquí".</p>
+  <p>Con target="_blank" el enlace se abre en una pestaña nueva, y con href="#id" podemos saltar a otra parte de la misma página, que es justo lo que hace este índice.</p>
+  <a href="#inicio">↑ Volver al índice</a>
+</body>
+</html>
