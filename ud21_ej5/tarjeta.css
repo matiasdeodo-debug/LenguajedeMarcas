@@ -1,0 +1,27 @@
+/* ===== General ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+}
+
+/* ===== Títulos ===== */
+h1, h2 {
+  color: #ff4fa3;
+  text-align: center;
+}
+
+/* ===== Tarjeta ===== */
+.tarjeta {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #2ee6e6;
+  border-radius: 10px;
+  background-color: #16213e;
+}
+
+/* ===== Texto ===== */
+p {
+  color: white;
+  text-align: justify;
+}
