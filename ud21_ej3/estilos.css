@@ -1,0 +1,24 @@
+/* 1. em solo dentro del h1 (el em del li no cambia) */
+h1 em {
+  color: orange;
+}
+
+/* 2. fondo gris solo a los p que están dentro de un li */
+li p {
+  background-color: lightgray;
+}
+
+/* 3. borde izquierdo solo a los p dentro de .comentarios */
+.comentarios p {
+  border-left: 4px solid deeppink;
+}
+
+/* 4. afecta a los dos p con class="especial" */
+p.especial {
+  font-style: italic;
+}
+
+/* 5. para que también afecte al span */
+.especial {
+  font-weight: bold;
+}
