@@ -1,4 +1,0 @@
-/* con inside la segunda línea se mete debajo de la viñeta y con outside queda alineada con el texto de la primera línea, también he achicado el navegador porque sino no se veria la diferencia con "outside"  */
-.personajes {
-  list-style: disc url("img/gato.svg") outside;
-}
