@@ -1,0 +1,18 @@
+h1 {
+  color: deeppink;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  color: teal;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Puse la regla * arriba y luego abajo y se ve igual, porque no choca con las otras reglas. */
+* {
+  font-family: Verdana, sans-serif;
+} *
