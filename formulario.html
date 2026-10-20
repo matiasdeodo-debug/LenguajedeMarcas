@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de alta de usuario</title>
+
+    <style>
+        body {
+            background-color: white;
+            font-family: "Times New Roman", serif;
+        }
+
+        .formulario {
+            background-color: darksalmon;
+            width: 540px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0 0 15px 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: darksalmon;
+        }
+
+        td {
+            border: 3px solid white;
+            padding: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .centrado {
+            text-align: center;
+        }
+
+        .izq {
+            width: 50%;
+        }
+
+        #email {
+            width: 320px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="http://172.30.18.224:3000/" method="post">
+
+        <div class="formulario">
+
+            <h1>Formulario de alta de usuario</h1>
+
+            <table>
+                <tr>
+                    <td colspan="2" class="centrado">
+                        <label for="usuario">Identificador de nuevo usuario</label>
+                        <input type="text"
+                               id="usuario"
+                               name="usuario"
+                               value="usu_012345"
+                               readonly
+                               title="Identificador asignado automáticamente, no se puede modificar">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="izq">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text"
+                               id="nombre"
+                               name="nombre"
+                               title="Escriba su nombre">
+                    </td>
+
+                    <td>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text"
+                               id="apellidos"
+                               name="apellidos"
+                               title="Escriba sus apellidos">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pass">Contraseña:</label>
+                        <input type="password"
+                               id="pass"
+                               name="pass"
+                               title="Escriba su contraseña">
+                    </td>
+
+                    <td>
+                        <label for="pass2">Confirmar contraseña:</label>
+                        <input type="password"
+                               id="pass2"
+                               name="pass2"
+                               title="Repita la contraseña">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label for="email">Email:</label>
+                        <input type="text"
+                               id="email"
+                               name="email"
+                               title="Escriba su correo electrónico">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Sexo:</label>
+                    </td>
+
+                    <td>
+                        <input type="radio"
+                               id="hombre"
+                               name="sexo"
+                               value="hombre"
+                               title="Seleccione si es hombre">
+
+                        <label for="hombre" style="font-weight: normal;">Hombre</label>
+
+                        <input type="radio"
+                               id="mujer"
+                               name="sexo"
+                               value="mujer"
+                               checked
+                               title="Seleccione si es mujer">
+
+                        <label for="mujer" style="font-weight: normal;">Mujer</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Aficiones:</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox"
+                               id="deporte"
+                               name="aficiones"
+                               value="deporte"
+                               title="Marque si le gusta el deporte">
+
+                        <label for="deporte" style="font-weight: normal;">Deportes</label>
+                        <br>
+
+                        <input type="checkbox"
+                               id="lectura"
+                               name="aficiones"
+                               value="lectura"
+                               checked
+                               title="Marque si le gusta la lectura">
+
+                        <label for="lectura" style="font-weight: normal;">Lectura</label>
+                        <br>
+
+                        <input type="checkbox"
+                               id="cine"
+                               name="aficiones"
+                               value="cine"
+                               title="Marque si le gusta el cine">
+
+                        <label for="cine" style="font-weight: normal;">Cine</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pais">País:</label>
+                    </td>
+
+                    <td>
+                        <select id="pais"
+                                name="pais"
+                                title="Seleccione su país">
+
+                            <option value="espana" selected>España</option>
+                            <option value="francia">Francia</option>
+                            <option value="portugal">Portugal</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="foto">Subir su foto:</label>
+                    </td>
+
+                    <td>
+                        <input type="file"
+                               id="foto"
+                               name="foto"
+                               title="Seleccione una foto de su equipo">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="comentarios">Comentarios personales:</label>
+                    </td>
+
+                    <td>
+                        <textarea id="comentarios"
+                                  name="comentarios"
+                                  cols="30"
+                                  rows="5"
+                                  placeholder="Escriba aquí sus comentarios"
+                                  title="Escriba aquí sus comentarios personales"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="centrado">
+                        <input type="reset"
+                               value="Resetear"
+                               title="Borra todos los datos del formulario">
+                    </td>
+
+                    <td class="centrado">
+                        <input type="submit"
+                               value="Enviar"
+                               title="Envía el formulario">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
