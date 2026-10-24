@@ -1,0 +1,58 @@
+body {
+  background-color: #0b0b12;
+  color: #e8e8e8;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+h1, h2 {
+  color: #fcee09;
+}
+
+/* ===== Tabla ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+th, td {
+  padding: 10px 14px;
+  border: 1px solid #333344;
+  text-align: left;
+}
+
+/* La primera fila (tr) es la cabecera, asi que los datos impares
+   (1º, 3º y 5º) son los tr pares del HTML y al reves */
+tr:nth-child(even) {
+  background-color: #14141f;   /* datos impares */
+}
+
+tr:nth-child(odd) {
+  background-color: #23233a;   /* datos pares (la cabecera se pinta con th) */
+}
+
+th {
+  background-color: #00f0ff;   /* pisa el fondo de la fila, asi la cabecera no hace cebra */
+  color: #000000;
+}
+
+/* Amarillo al pasar el raton, pero no en la cabecera (primera fila) */
+tr:not(:first-child):hover {
+  background-color: #fcee09;
+  color: #000000;
+}
+
+/* ===== Lista ===== */
+li {
+  margin-bottom: 4px;
+}
+
+li:nth-child(3n+1) {          /* elementos 1, 4 y 7 */
+  color: #ff2a6d;
+}
+
+li:nth-child(3) {             /* solo el tercero en negrita */
+  font-weight: bold;
+}
