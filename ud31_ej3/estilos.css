@@ -1,0 +1,72 @@
+body {
+  background-color: #0b0b12;
+  color: #e8e8e8;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+h1, h2 {
+  color: #fcee09;
+}
+
+/* ===== Parte A: tarjeta de producto ===== */
+.tarjeta {
+  position: relative;       /* la etiqueta se coloca respecto a la tarjeta */
+  width: 300px;
+  border: 2px solid #00f0ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #14141f;
+}
+
+.etiqueta {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff2a6d;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.precio {
+  color: #fcee09;
+  font-weight: bold;
+}
+
+.foto {
+  height: 100px;
+  background-color: #05d9e8;   /* recuadro de color en vez de foto */
+  border-radius: 8px;
+}
+
+/* Prueba de overflow: hidden en la tarjeta (la etiqueta se corta):
+.tarjeta {
+  overflow: hidden;
+}
+*/
+
+/* Prueba visibility y display en las tarjetas copiadas:
+.copia1 {
+  visibility: hidden;
+}
+.copia2 {
+  display: none;
+}
+*/
+
+/* ===== Parte B: caja de comentarios ===== */
+.comentarios {
+  width: 300px;
+  height: 120px;
+  border: 2px solid #ff2a6d;
+  padding: 10px;
+  /* probe: visible, hidden, scroll y auto. Dejo auto */
+  overflow: auto;
+}
+
+.comentarios p {
+  margin: 0 0 10px 0;
+}
