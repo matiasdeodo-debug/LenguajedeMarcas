@@ -1,0 +1,91 @@
+html {
+  scroll-behavior: smooth;   /* opcional: los saltos son suaves */
+}
+
+body {
+  margin: 0;
+  background-color: #0b0b12;
+  color: #e8e8e8;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.banner {
+  background-color: #1a1a2e;
+  color: #fcee09;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  margin: 0 0 10px 0;
+}
+
+.banner p {
+  margin: 0;
+  color: #e8e8e8;
+}
+
+/* ===== Menu que se queda pegado ===== */
+.menu {
+  position: sticky;
+  top: 0;                    /* sin top el sticky no hace nada */
+  z-index: 10;               /* para que el texto no pase por encima */
+  background-color: #14141f; /* con fondo, si no se ve el texto a traves */
+  border-bottom: 2px solid #00f0ff;
+}
+
+/* Prueba de sticky -> fixed (la dejo comentada):
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+*/
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 25px;
+  color: #00f0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #ff2a6d;
+  color: #ffffff;
+}
+
+/* ===== Secciones ===== */
+section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  scroll-margin-top: 70px;   /* para que el menu no tape el titulo al saltar */
+}
+
+section h2 {
+  color: #fcee09;
+}
+
+/* ===== Boton subir ===== */
+.subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  border-radius: 25px;
+  background-color: #ff2a6d;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 20;
+}
