@@ -1,0 +1,89 @@
+body {
+  background-color: #0b0b12;
+  color: #e8e8e8;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+h1 {
+  color: #fcee09;
+}
+
+form {
+  max-width: 420px;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+fieldset label {
+  margin-right: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  background-color: #14141f;
+  color: #e8e8e8;
+  border: 2px solid #333344;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  border: 1px solid #333344;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff2a6d;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* ===== Pseudoclases (el trabajo de este ejercicio) ===== */
+
+/* :focus -> el campo con el cursor cambia de fondo */
+input:focus {
+  background-color: #2a2a4a;
+}
+
+/* :required -> borde izquierdo rojo de 4px */
+input:required {
+  border-left: 4px solid #ff0000;
+}
+
+/* :read-only -> el identificador en gris
+   (solo en los text, porque si no tambien afecta a los radios y checkbox) */
+input[type="text"]:read-only {
+  color: #888888;
+}
+
+/* :disabled -> codigo promocional atenuado
+   (va despues de read-only porque un disabled tambien es read-only) */
+input:disabled {
+  opacity: 0.4;
+}
+
+/* :checked + label -> la opcion marcada en negrita y verde
+   (el label tiene que ir justo despues del input) */
+input:checked + label {
+  font-weight: bold;
+  color: #39ff14;
+}
+
+/* Dos pseudoclases juntas: hover y focus a la vez */
+input:hover:focus {
+  background-color: #4a1f5c;
+}
