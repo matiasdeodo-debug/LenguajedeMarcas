@@ -1,0 +1,89 @@
+body {
+  background-color: #0b0b12;
+  color: #e8e8e8;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #fcee09;
+}
+
+h2 {
+  color: #00f0ff;
+}
+
+a {
+  color: #ff2a6d;
+}
+
+/* ::selection -> color de fondo al seleccionar texto con el raton */
+::selection {
+  background-color: #ff2a6d;
+  color: #ffffff;
+}
+
+/* ::first-letter -> primera letra de cada parrafo, grande y de otro color */
+p::first-letter {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #ff2a6d;
+}
+
+/* ::first-line -> primera linea en versalitas y negrita */
+p::first-line {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* ::before -> simbolo antes de cada elemento de la lista (quito antes la viñeta) */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "✔";
+  color: #39ff14;
+  margin-right: 10px;
+}
+
+/* ::after -> flecha despues de los enlaces que se abren en otra pestaña */
+a[target="_blank"]::after {
+  content: " ↗";
+}
+
+/* ::after en los h2 -> barrita decorativa debajo */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff2a6d;
+  margin-top: 6px;
+}
+
+/* ===== Reto: tooltip ===== */
+[data-ayuda] {
+  position: relative;           /* para colocar la burbuja respecto a la palabra */
+  border-bottom: 1px dotted #fcee09;
+  cursor: help;
+}
+
+[data-ayuda]:hover::after {
+  content: attr(data-ayuda);
+  position: absolute;
+  bottom: 130%;
+  left: 0;
+  background-color: #fcee09;
+  color: #000000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  z-index: 5;
+}
