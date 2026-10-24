@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+body {
+  margin: 4px;
+  font-family: "Nunito", sans-serif;
+  color: #222222;
+}
+
+/* ===== Encabezado ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 28px;
+  margin-bottom: 8px;
+  background-color: #eee;
+}
+
+header .logo {
+  width: 110px;
+  height: 110px;
+}
+
+header .titulo {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 52px;
+  color: #5a0000;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #004000;
+}
+
+/* ===== Menu de navegacion ===== */
+nav {
+  margin-bottom: 8px;
+  background-color: #eee;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  padding: 6px 4px;
+  margin: 0 3px;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-top: 2px solid transparent;      /* transparente para que no salte al hacer hover */
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #ff0000;
+  font-weight: bold;
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+}
+
+/* ===== Seccion de redes sociales ===== */
+section {
+  font-size: 0;            /* quita el espacio en blanco entre los inline-block */
+}
+
+article {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: calc((100% - 9px) / 3);   /* 3 por fila, dejando 4px entre cada una */
+  min-height: 256px;
+  margin: 0 4px 4px 0;
+  padding: 10px;
+  font-size: 16px;         /* vuelvo a dar tamaño al texto, porque el section tiene 0 */
+}
+
+article:nth-child(3n) {
+  margin-right: 0;         /* la tercera de cada fila no necesita hueco a la derecha */
+}
+
+article img {
+  float: left;
+  width: 70px;
+  margin-right: 10px;
+}
+
+article div {
+  overflow: hidden;        /* el texto se queda en su columna, al lado de la imagen */
+  padding-right: 40px;
+}
+
+article h3 {
+  margin: 0 0 15px 0;
+  font-size: 24px;
+}
+
+article p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Un color distinto para cada article con nth-child */
+article:nth-child(1) {
+  background-color: rgba(162, 179, 188, 0.5);   /* Facebook */
+}
+
+article:nth-child(2) {
+  background-color: rgba(241, 151, 79, 0.5);    /* Twitter */
+}
+
+article:nth-child(3) {
+  background-color: rgba(208, 61, 107, 0.5);    /* YouTube */
+}
+
+article:nth-child(4) {
+  background-color: rgba(195, 23, 65, 0.5);     /* LinkedIn */
+}
+
+article:nth-child(5) {
+  background-color: rgba(109, 104, 166, 0.5);   /* Instagram */
+}
+
+article:nth-child(6) {
+  background-color: rgba(156, 154, 203, 0.5);   /* Pinterest */
+}
+
+/* ===== Imagenes de redes sociales: crecen al pasar el raton ===== */
+section img,
+footer img {
+  transition: transform 0.3s;
+}
+
+section img:hover,
+footer img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== Pie de pagina ===== */
+footer {
+  background-color: #eee;
+  text-align: center;
+}
+
+footer .iconos {
+  padding: 8px 0;
+}
+
+footer .iconos img {
+  width: 50px;
+  height: 50px;
+}
+
+footer p {
+  margin: 0;
+  padding: 4px 0;
+  border-top: 4px solid #ffffff;
+  font-size: 13px;
+}
