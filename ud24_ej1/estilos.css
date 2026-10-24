@@ -1,0 +1,66 @@
+/* ===== PARTE A: cajas visibles y centradas ===== */
+.pagina {
+  width: 800px;
+  margin: 0 auto;          /* centrada en el navegador */
+  border: 2px solid #222;
+  padding: 20px;
+}
+
+.cabecera {
+  background-color: #cfe8ff;
+  border: 2px solid #1d4e89;
+  text-align: center;
+}
+
+.contenido {
+  background-color: #fff3c4;
+  border: 2px solid #b8860b;
+}
+
+.pie {
+  background-color: #ffd6e0;
+  border: 2px solid #c2185b;
+  text-align: center;
+  margin-top: 20px;        /* separa el pie del contenido */
+}
+
+/* ===== PARTE B: display ===== */
+.tarjeta {
+  width: 200px;            /* con 220 no cabían las 3 (ver README) */
+  padding: 15px;
+  border: 1px solid #333;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  /* Por defecto es display: block -> se apilan una debajo de otra */
+}
+
+/* Opción 1 (probada): inline-block
+.tarjeta {
+  display: inline-block;
+  vertical-align: top;
+}
+*/
+
+/* Opción 2 (la que dejo): flex en el contenedor */
+.contenido {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== PARTE C: block, inline y none ===== */
+.etiqueta {
+  background-color: #ff4fa3;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  /* Siendo <span> (inline) ignora width, height y el margin de arriba/abajo */
+  display: inline-block;   /* con inline-block ya se aplican todos */
+}
+
+/* Prueba del display: none (la quito al terminar):
+.tarjeta:nth-child(3) {
+  display: none;
+}
+*/
