@@ -1,0 +1,54 @@
+body {
+  background-color: #0b0b12;
+  color: #e8e8e8;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #fcee09;
+}
+
+/* ===== Base ===== */
+.contenedor {
+  border: 2px solid #00f0ff;
+  width: 300px;
+  /* Paso absolute: al principio NO tenia esto. Lo puse despues para que
+     c3 se coloque respecto al contenedor y no respecto a la pagina */
+  position: relative;
+}
+
+.cuadro {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ===== static (c1) ===== */
+.c1 {
+  background-color: #fcee09;
+  /* left: 50px;   <- con position static NO hace nada, lo probe y no se mueve.
+     Lo quito porque abajo le pongo position: relative para el z-index */
+  position: relative;   /* hace falta para que funcione el z-index */
+  z-index: 2;           /* mas alto que c2, asi c1 queda por encima */
+}
+
+/* ===== relative (c2) ===== */
+.c2 {
+  background-color: #ff2a6d;
+  position: relative;
+  top: -40px;           /* antes probe top: 20px; ahora sube para tapar a c1 */
+  left: 50px;
+  z-index: 1;           /* menor que c1 */
+}
+
+/* ===== absolute (c3) ===== */
+.c3 {
+  background-color: #05d9e8;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
