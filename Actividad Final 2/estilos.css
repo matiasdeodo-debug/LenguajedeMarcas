@@ -1,0 +1,354 @@
+/* Estilos de la Actividad Final 2: Web con posicionamiento */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+    background: #e9efe9;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contenedor {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+header {
+    position: relative;
+    padding: 30px 28px;
+    background: #2f5d46;
+    color: #fff;
+    min-height: 145px;
+}
+
+header h1 {
+    margin: 0 110px 8px 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.sello {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: #f08a24;
+    color: #222;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 1.3;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #2f5d46;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #f08a24;
+    color: #222;
+}
+
+section {
+    padding: 28px;
+    border-bottom: 1px solid #e1e8e1;
+    scroll-margin-top: 60px;
+}
+
+section h2 {
+    color: #2f5d46;
+    margin: 0 0 16px;
+    font-size: 25px;
+}
+
+#inicio p {
+    max-width: 720px;
+    margin-bottom: 5px;
+}
+
+.tarjetas {
+    text-align: center;
+    padding: 12px 0 8px;
+    white-space: normal;
+}
+
+.tarjeta {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    min-height: 300px;
+    margin: 0 8px;
+    padding: 0 0 16px;
+    overflow: hidden;
+    border: 1px solid #d7e0d7;
+    border-radius: 5px;
+    text-align: left;
+    background: #fff;
+}
+
+.tarjeta .foto {
+    width: 100%;
+    height: 135px;
+}
+
+.foto-pinar {
+    background: #8fb996;
+}
+
+.foto-mirador {
+    background: #a7c5d9;
+}
+
+.foto-barranco {
+    background: #e5c07b;
+}
+
+.nivel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    background: #f08a24;
+    color: #222;
+    border-radius: 14px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tarjeta h3,
+.tarjeta p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.tarjeta h3 {
+    color: #2f5d46;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+
+.tarjeta p {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.tarjeta.central {
+    position: relative;
+    top: -12px;
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.22);
+}
+
+.galeria {
+    position: relative;
+    height: 270px;
+    margin: 20px 0 5px;
+}
+
+.polaroid {
+    position: absolute;
+    top: 8px;
+    width: 280px;
+    height: 210px;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+    transition: transform 0.2s ease;
+}
+
+.polaroid-1 {
+    left: 70px;
+    transform: rotate(-7deg);
+}
+
+.polaroid-2 {
+    left: 320px;
+    top: 0;
+    transform: rotate(3deg);
+    z-index: 3;
+}
+
+.polaroid-3 {
+    left: 560px;
+    transform: rotate(7deg);
+}
+
+.polaroid:hover {
+    z-index: 10;
+    transform: rotate(0deg) scale(1.05);
+}
+
+.foto-galeria {
+    height: 155px;
+    width: 100%;
+}
+
+.polaroid p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.caja-opiniones {
+    height: 170px;
+    overflow: auto;
+    border: 1px solid #cbd8cb;
+    padding: 8px 14px;
+    background: #f8faf8;
+}
+
+.opinion {
+    padding: 8px 2px;
+    border-bottom: 1px solid #dce5dc;
+}
+
+.opinion:last-child {
+    border-bottom: 0;
+}
+
+.opinion h3 {
+    display: inline;
+    margin: 0 8px 0 0;
+    color: #2f5d46;
+    font-size: 16px;
+}
+
+.opinion p {
+    display: inline;
+    margin: 0;
+    font-size: 14px;
+}
+
+footer {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 28px;
+    background: #2f5d46;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.subir {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 200;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background: #f08a24;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subir:hover {
+    background: #2f5d46;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .tarjeta {
+        margin: 8px 4px;
+        width: 28%;
+    }
+
+    .polaroid-1 { left: 3%; }
+    .polaroid-2 { left: 34%; }
+    .polaroid-3 { left: 64%; }
+    .polaroid { width: 30%; }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+        margin-right: 85px;
+    }
+
+    nav a {
+        padding: 12px 9px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 20px 16px;
+    }
+
+    .tarjeta {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    .tarjeta.central {
+        top: 0;
+    }
+
+    .galeria {
+        height: 650px;
+    }
+
+    .polaroid,
+    .polaroid-1,
+    .polaroid-2,
+    .polaroid-3 {
+        width: 280px;
+        max-width: 90%;
+        left: 5%;
+    }
+
+    .polaroid-1 { top: 0; }
+    .polaroid-2 { top: 210px; }
+    .polaroid-3 { top: 420px; }
+}
