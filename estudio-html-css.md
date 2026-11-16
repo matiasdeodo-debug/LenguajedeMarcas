@@ -1,4 +1,4 @@
-# 🛠️ Chuleta HTML + CSS: reparar una página
+# HTML + CSS: reparar una página
 
 🟥 = HTML · 🟦 = CSS · 🟨 = truco · ✅ = arreglo
 
