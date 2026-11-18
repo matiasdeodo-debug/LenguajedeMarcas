@@ -1,6 +1,4 @@
-# Repaso del examen: Librería La Página
 
-Qué falló, por qué falló y cómo se arregla. Todo se resuelve solo con CSS.
 
 ## Las 4 ideas que explican casi todo
 
