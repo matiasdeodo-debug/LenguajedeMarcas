@@ -1,3 +1,41 @@
+#	Fallo	Causa	Arreglo
+1	El menú no se queda fijo	sticky sin top	nav { position: sticky; top: 0; z-index: 10; }
+2	El submenú no aparece	display: none sin regla :hover; además su li padre no es relative y los li del submenú son inline-block	Ver código abajo
+3	No sale el emoji	content sin comillas	content: "☕";
+4	Las tarjetas no caben en una fila	290 + borde + márgenes, por 3, supera los 852px útiles	box-sizing: border-box; width: 260px;
+5	Las etiquetas salen mal colocadas	.etiqueta es absolute pero .producto no tiene position	.producto { position: relative; }
+6	La tabla no se desplaza	overflow: hidden	overflow: auto;
+7	La cabecera de la tabla no se queda fija	sticky sin top	.horario th { position: sticky; top: 0; }
+8	El borde amarillo al hacer clic no sale	input.focus es una clase, no una pseudoclase	input:focus, select:focus { border-color: #F2B84B; outline: none; }
+9	El botón Reservar no queda fijo	absolute	position: fixed;
+10	No hay globo con el texto	Falta el CSS que use data-tip	Ver código abajo
+11	Pie con "NOMBRE DEL ALUMNO/A"	Falta tu nombre	Cámbialo en el HTML
+Código de las partes más largas
+css
+nav li { display: inline-block; position: relative; }
+
+.desplegable { display: none; position: absolute; top: 100%; left: 0;
+               background: #1F5C4A; min-width: 160px; padding: 0; z-index: 20; }
+.desplegable li { display: block; }
+nav li:hover > .desplegable { display: block; }
+
+.etiqueta:hover::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  background: #222;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+Pista sobre el fallo 8
+
+Es el más traicionero porque el CSS parece correcto. Para el CSS, .focus significa "elemento con class="focus"". Para "cuando está seleccionado" se usa :focus con dos puntos. Compara siempre .algo (clase) con :algo (pseudoclase).
+
 [README.md](https://github.com/user-attachments/files/35038324/README.md)#[Uploleft: 0 → right: 0: pega el menú al lado derecho.
 
 
